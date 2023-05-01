@@ -22,7 +22,11 @@ class StudentController extends Controller
     }
 
     public function store(StudentStoreRequest $request) {
-        $student = Student::create($request->validated());
+        $validatedData = $request->validated();
+        $validatedData['nim'] = $request->nim;
+        $validatedData['name'] = $request->name;
+        $validatedData['email'] = $request->email;
+        $student = Student::create($validatedData);
 
         return new StudentResource($student);
     }

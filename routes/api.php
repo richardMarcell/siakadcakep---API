@@ -33,10 +33,11 @@ Route::middleware(['auth:sanctum'])->group(function() {
 
         Route::prefix('subjects')->name('subjects')->group(function() {
             Route::get('/', [SubjectController::class, 'index'])->name('index');
-            Route::get('/{id}', [SubjectController::class, 'show'])->name('show');
+            Route::get('/{subject}', [SubjectController::class, 'show'])->name('show');
             Route::post('/', [SubjectController::class, 'store'])->name('store');
-            Route::put('/{id}', [SubjectController::class, 'update'])->name('update');
-            Route::delete('/{id}', [SubjectController::class, 'destroy'])->name('destroy');
+            Route::put('/{subject}', [SubjectController::class, 'update'])->name('update');
+            Route::delete('/{subject}', [SubjectController::class, 'destroy'])->name('destroy');
         });
     });
 });
+
