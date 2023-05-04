@@ -13,6 +13,7 @@ class LearningPlan extends Model
         'student_id', 
         'subject_id', 
         'status',
+        'periode'
     ];
 
     public function student()

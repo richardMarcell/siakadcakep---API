@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\LearningPlanController;
 use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\StudentController;
 use App\Http\Controllers\Api\SubjectController;
@@ -38,6 +39,17 @@ Route::middleware(['auth:sanctum'])->group(function() {
             Route::put('/{subject}', [SubjectController::class, 'update'])->name('update');
             Route::delete('/{subject}', [SubjectController::class, 'destroy'])->name('destroy');
         });
+
+        Route::prefix('learning_plans')->name('learning_plans')->group(function() {
+            Route::get('/', [LearningPlanController::class, 'index'])->name('index');
+            Route::post('/', [LearningPlanController::class, 'store'])->name('store');
+            Route::get('/{learning}', [LearningPlanController::class, 'show'])->name('show');
+            Route::put('/accept', [LearningPlanController::class, 'accept']);
+            Route::put('/reject', [LearningPlanController::class, 'reject']);
+            Route::get('/subjects/{student_id}', [LearningPlanController::class, 'showSubject']);
+            Route::get('/notification/{student_id}', [LearningPlanController::class, 'showNotif']);
+        });
     });
 });
+
 

@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         {
             User::updateOrCreate([
                 'name' => $userData['name'],   
-                'email' => $userData['email'],   
+                'nim' => $userData['nim'],   
                 'role' => $userData['role'],   
                 'password' => $userData['password'],   
             ]);
@@ -29,55 +29,55 @@ class UserSeeder extends Seeder
         return [
             [
                 'name' => 'admin',
-                'email' => 'admin@gmail.com',
+                'nim' => 'STIAdmin',
                 'role' => 'admin',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Richard Marcell',
-                'email' => 'richard@gmail.com',
+                'nim' => 'STI2210001',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Hazel Dixon',
-                'email' => 'hazel@gmail.com',
+                'nim' => 'STI2210002',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Agustianto',
-                'email' => 'agustianto@gmail.com',
+                'nim' => 'STI2210003',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Darren Steven',
-                'email' => 'darren@gmail.com',
+                'nim' => 'STI2210004',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Calvin Tai',
-                'email' => 'calvin@gmail.com',
+                'nim' => 'STI2210005',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Steven',
-                'email' => 'steven@gmail.com',
+                'nim' => 'STI2210006',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Dustin Tiovino',
-                'email' => 'dustin@gmail.com',
+                'nim' => 'STI2210007',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],
             [
                 'name' => 'Nieven Carlin',
-                'email' => 'nieven@gmail.com',
+                'nim' => 'STI2210008',
                 'role' => 'student',
                 'password' => Hash::make('nasigoreng123'),
             ],

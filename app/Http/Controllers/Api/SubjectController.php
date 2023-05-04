@@ -23,7 +23,7 @@ class SubjectController extends Controller
 
     public function store(SubjectStoreRequest $request) {
         $validatedData = $request->validated();
-        $validatedData['subject_code'] = $request->subject_code;
+        $validatedData['id'] = $request->id;
         $validatedData['name'] = $request->name;
         $validatedData['lecture'] = $request->lecture;
         $validatedData['sks'] = $request->sks;

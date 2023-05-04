@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('learning_plans', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('student_id');
-            $table->unsignedBigInteger('subject_id');
+            $table->string('student_id');
+            $table->string('subject_id');
             $table->string('status');
+            $table->string('periode');
             $table->foreign('student_id')->references('id')->on('students');
             $table->foreign('subject_id')->references('id')->on('subjects');
             $table->timestamps();

@@ -10,14 +10,18 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
-        'nim',
+        'id',
         'name',
         'email',
     ];
 
+    protected $keyType = 'string';
+
+    public $incrementing = false;
+
     public function subjects()
     {
         return $this->belongsToMany(Subject::class, 'learning_plans', 'student_id', 'subject_id')
-            ->withPivot('status');
+            ->withPivot('status', 'periode');
     }
 }

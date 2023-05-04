@@ -22,7 +22,7 @@ class StudentUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nim' => 'required',
+            'id' => 'required',
             'name' => 'required',
             'email' => 'required',
         ];

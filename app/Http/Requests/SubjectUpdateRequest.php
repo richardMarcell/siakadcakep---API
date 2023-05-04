@@ -22,7 +22,7 @@ class SubjectUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'subject_code' => 'required',
+            'id' => 'required',
             'name' => 'required',
             'lecture' => 'required', 
             'sks' => 'required',

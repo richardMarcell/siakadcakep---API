@@ -16,7 +16,7 @@ class SubjectSeeder extends Seeder
         foreach($this->getSubject() as $subjectData)
         {
             Subject::create([
-                'subject_code' => $subjectData['subject_code'],
+                'id' => $subjectData['id'],
                 'name' => $subjectData['name'],
                 'lecture' => $subjectData['lecture'],
                 'sks' => $subjectData['sks'],
@@ -28,61 +28,61 @@ class SubjectSeeder extends Seeder
     {
         return [
             [
-                'subject_code' => 'STI0001',
+                'id' => 'STI0001',
                 'name' => 'Algoritma dan Pemrograman Dasar',
                 'lecture' => 'Ms. Yuricha',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0002',
+                'id' => 'STI0002',
                 'name' => 'Struktur Data',
                 'lecture' => 'Mr. Daniel',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0003',
+                'id' => 'STI0003',
                 'name' => 'UX Design',
                 'lecture' => 'Mr Filbert',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0004',
+                'id' => 'STI0004',
                 'name' => 'Transformasi Digital',
                 'lecture' => 'Mr. Brian',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0005',
+                'id' => 'STI0005',
                 'name' => 'Aljabar Linear',
                 'lecture' => 'Mr. Yudi',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0006',
+                'id' => 'STI0006',
                 'name' => 'UX Design',
                 'lecture' => 'Mr. Brian',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0007',
+                'id' => 'STI0007',
                 'name' => 'Matematika Diskrit',
                 'lecture' => 'Mr. Brian',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0008',
+                'id' => 'STI0008',
                 'name' => 'Jaringan Komputer dan Komunikasi Data',
                 'lecture' => 'Mr. Filbert',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0009',
+                'id' => 'STI0009',
                 'name' => 'Pemrograman Web Dasar',
                 'lecture' => 'Ms. Yuricha',
                 'sks' => 3,
             ],
             [
-                'subject_code' => 'STI0010',
+                'id' => 'STI0010',
                 'name' => 'Sistem Basis Data',
                 'lecture' => 'Mr. Daniel',
                 'sks' => 3,

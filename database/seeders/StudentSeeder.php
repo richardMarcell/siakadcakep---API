@@ -16,7 +16,7 @@ class StudentSeeder extends Seeder
         foreach($this->getStudent() as $studentData)
         {
             Student::create([
-                'nim' => $studentData['nim'],
+                'id' => $studentData['id'],
                 'name' => $studentData['name'],
                 'email' => $studentData['email'],
             ]);
@@ -27,42 +27,42 @@ class StudentSeeder extends Seeder
     {
         return [
             [
-                'nim' => 'STI2210001',
+                'id' => 'STI2210001',
                 'name' => 'Richard Marcell',
                 'email' => 'richard@gmail.com',
             ],
             [
-                'nim' => 'STI2210002',
+                'id' => 'STI2210002',
                 'name' => 'Hazel Dixon',
                 'email' => 'hazel@gmail.com',
             ],
             [
-                'nim' => 'STI2210003',
+                'id' => 'STI2210003',
                 'name' => 'Agustianto',
                 'email' => 'agustianto@gmail.com',
             ],
             [
-                'nim' => 'STI2210004',
+                'id' => 'STI2210004',
                 'name' => 'Darren Steven',
                 'email' => 'darren@gmail.com',
             ],
             [
-                'nim' => 'STI2210005',
+                'id' => 'STI2210005',
                 'name' => 'Calvin Tai',
                 'email' => 'calvin@gmail.com',
             ],
             [
-                'nim' => 'STI2210006',
+                'id' => 'STI2210006',
                 'name' => 'Steven',
                 'email' => 'steven@gmail.com',
             ],
             [
-                'nim' => 'STI2210007',
+                'id' => 'STI2210007',
                 'name' => 'Dustin Tiovino',
                 'email' => 'dustin@gmail.com',
             ],
             [
-                'nim' => 'STI2210008',
+                'id' => 'STI2210008',
                 'name' => 'Nieven Carlin',
                 'email' => 'nieven@gmail.com',
             ],
